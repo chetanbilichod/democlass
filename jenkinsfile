@@ -1,0 +1,8 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                sh 'http://3.81.14.89:8080/job/jenkinspipelinejib/build?token=chetan'
+            }
+        }
